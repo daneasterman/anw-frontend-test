@@ -1,5 +1,6 @@
 {
   "name": "anw.frontend.test",
+  "author": "Jonathan Welton",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
