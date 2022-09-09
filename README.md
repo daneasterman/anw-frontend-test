@@ -31,10 +31,11 @@ npm test
 
 ### Your Task
 
-Extend the app so you can:
+Extend the app so the user can:
 
 * view album details (including track listings)
 * add each track to a favourites list (in local state)
+* view the application on any device
 
 Use the following documentation to help you with calls to our Music API: https://musicapi.audionetwork.com/docs/
 

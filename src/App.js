@@ -24,24 +24,23 @@ function App() {
 
 
   return (
-    <>
+    <main>
       <h1 className="heading">Latest Released Albums</h1>
-        <div className="grid">
-          {albums && albums.map((album) => {
-            return (
-              <div className="gridItem" key={album.number}>
-                <h3>{album.name}</h3>
+        <ul className="grid">
+          {albums?.map((album) => (
+              <li className="gridItem" key={album.number}>
+                <h2>{album.name}</h2>
                 <img
                   src={album.artworkUrl}
                   alt={`${album.name} artwork`}
                   width={300}
                   height={300}
                 />
-              </div>
+              </li>
             )
-          })}
-        </div>
-      </>
+          )}
+        </ul>
+      </main>
   );
 }
 
