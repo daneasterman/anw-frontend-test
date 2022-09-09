@@ -31,10 +31,15 @@ npm test
 
 ### Your Task
 
-Extend the app so you can view album details, including track listings, and the composers associated with each track.
+Extend the app so you can:
+
+* view album details (including track listings)
+* add each track to a favourites list (in local state)
 
 Use the following documentation to help you with calls to our Music API: https://test-musicapi.audionetwork.com/docs/
 
 We use TypeScript, and if you would like to as well, you can see how to configure it [here](https://create-react-app.dev/docs/adding-typescript/).
+
+Please feel free to use any CSS-in-JS library you are comfortable with and to restructure the app as you see fit.
 
 If you have any issues, please email [jwelton@audionetwork.com](mailto:jwelton@audionetwork.com)!
