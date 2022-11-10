@@ -1,6 +1,18 @@
 .heading {
 	text-align: center;
 }
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center 
+}
+
+.flexRow {
+	display: flex;
+	align-items: baseline;
+	justify-content: center 
+}
 
 .grid {
 	display: grid;
