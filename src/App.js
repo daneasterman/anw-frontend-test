@@ -38,7 +38,7 @@ function App() {
                     height={300}
                   />
                   <h3 style={{fontWeight: 'bold'}}>Album Tracks:</h3>
-                  {album.tracks.map((track) => (
+                  {album.tracks?.map((track) => (
                       <p>{track.title}</p>
                     )
                   )}
