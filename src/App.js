@@ -53,9 +53,9 @@ function App() {
     </div>
 
       <h1 className="heading">Latest Released Albums</h1>
-        <ul className="grid">
+        <ul className="flexWrapper">
           {albums?.map((album) => (
-                <li className="gridItem" key={album.number}>
+                <li className="flexItem" key={album.number}>
                   <h2>{album.name}</h2>
                   <img
                     src={album.artworkUrl}
