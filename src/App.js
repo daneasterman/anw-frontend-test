@@ -6,8 +6,7 @@ import { getAlbumArtworkUrl } from './services/contentfulClient'
 import { getAlbums, getAlbumTracks } from './services/musicApiClient'
 
 function App() {
-  const [albums, setAlbums] = useState([])
-  // const [favTrack, setFavTrack] = useState('')
+  const [albums, setAlbums] = useState([])  
   const [favTracklist, setFavTrackList] = useState([])
 
   useEffect(() => {
@@ -27,28 +26,24 @@ function App() {
   }, []);
 
   const addFavTrack = event => {
-    const value = event.target.value
-    // console.log(value)
-    const newList = favTracklist.concat({value});
-    console.log(newList)
-    setFavTrackList(newList)
-  };
-  
-  // const handleAdd = event => {
-  //   setFavTrack(event.target.value);
-  // };  
+    const value = event.target.value    
+    const newList = favTracklist.concat({value});    
+    setFavTrackList(newList)    
+  }; 
 
   return (
     <main>
     <div className="flexColumn"> 
-      <h1 className="heading">My Favourite Tracks</h1>
-      <ul>      
-      {favTracklist?.map((key, item) => (        
-        <li key={key}>
-        {console.log('markup', item.value)}
-          <p>{item.value}</p>
-        </li>
-      ))}
+      <h2 className="heading">My Favourite Tracks:</h2>
+      <ul>
+      {favTracklist?.map((item, key) => (
+        <div> 
+          <li key={key}>        
+            <p>{item.value}</p>
+          </li>
+          <p></p>
+        </div>
+        ))}
       </ul>
     </div>
 
